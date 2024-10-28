@@ -1,0 +1,86 @@
+.home-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.Background-image {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure it is behind all content including the navbar */
+    opacity: 0.7; /* Adds a soft overlay effect */
+}
+
+.home-header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 80%;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-input-field {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    width: 300px;
+    font-size: 16px;
+    color: #333;
+    transition: width 0.3s;
+}
+
+.search-input-field::placeholder {
+    color: #aaa;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .search-input-field {
+        width: 200px;
+    }
+}
+
+

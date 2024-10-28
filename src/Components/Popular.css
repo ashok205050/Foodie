@@ -1,0 +1,68 @@
+/* Popular.css */
+
+.popular-container {
+    background-color: white; /* Main div background color */
+    padding: 20px; /* Padding for the container */
+}
+
+.popular-title {
+    font-size: 24px; /* Title font size */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Spacing below the title */
+    color: #333; /* Title color */
+}
+
+.section {
+    width: 80vw; /* Set the width of the section */
+    margin: 0 auto 20px; /* Center the section and set bottom margin */
+    /* 0 auto centers the section horizontally, 20px for bottom spacing */
+}
+
+.section-title {
+    display: flex; /* Use flex for layout */
+    justify-content: space-between; /* Space between text and arrow */
+    align-items: center; /* Center items vertically */
+    font-size: 18px; /* Font size for section titles */
+    cursor: pointer; /* Cursor change on hover */
+    color: #0c0c0c; /* Section title color */
+    background-color: #e6e3e3; /* Background color for the strip */
+    padding: 12px 20px; /* Padding for the strip */
+    border-radius: 4px; /* Rounded corners for the strip */
+    transition: background-color 0.3s; /* Transition effect for background color */
+    width: 100%; /* Full width of the parent container */
+}
+
+.options-grid {
+    display: grid; /* Use grid for responsive layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Spacing between options */
+    margin-top: 10px; /* Spacing above options */
+}
+
+.options-grid span {
+    padding: 10px; /* Padding for option items */
+    background-color: #f8f9fa; /* Light gray background for options */
+    border-radius: 4px; /* Rounded corners for options */
+    text-align: center; /* Center text in options */
+    transition: background-color 0.3s; /* Transition effect for background color */
+}
+
+.options-grid span:hover {
+    background-color: #e2e6ea; /* Darker gray on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .popular-title {
+        font-size: 20px; /* Smaller font size on small screens */
+    }
+
+    .section-title {
+        font-size: 16px; /* Smaller font size for section titles */
+    }
+
+    .options-grid span {
+        font-size: 14px; /* Smaller font size for option items */
+        padding: 8px; /* Smaller padding for option items */
+    }
+}

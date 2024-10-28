@@ -1,0 +1,85 @@
+/* Footer.css */
+
+.footer {
+    background-color: #fff; /* Changed background to white */
+    color: #333; /* Changed default text color to dark for contrast */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.Footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Footer-top img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-email {
+    font-size: 16px;
+    color: #666; /* Adjusted email color for visibility */
+    margin-top: 10px;
+}
+
+.Footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.footer-section, .footer-details {
+    margin: 0 20px;
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333; /* Adjusted heading color for better visibility */
+    text-transform: uppercase;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin: 8px 0;
+}
+
+.footer ul li a {
+    color: #007BFF; /* Changed link color to blue for visibility */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd; /* Adjusted border color to match the new background */
+    padding-top: 15px;
+    font-size: 14px;
+    color: #666; /* Adjusted bottom text color */
+    text-align: center;
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+    .Footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section, .footer-details {
+        margin-bottom: 20px;
+    }
+}

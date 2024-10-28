@@ -1,0 +1,109 @@
+/* Main container for the cards */
+.Cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top for a consistent look */
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    gap: 20px; /* Space between cards */
+    box-sizing: border-box;
+}
+
+/* Styles for each card */
+.orderNow-card, .Restaurant {
+    flex: 1 1 45%; /* Allow each card to take up equal space */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+    max-width: 500px; /* Ensure cards do not exceed this width */
+    min-width: 280px; /* Minimum width to maintain design */
+    min-height: 250px; /* Set a minimum height for all cards */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding does not add to width */
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Align content vertically */
+}
+
+/* Hover effect */
+.orderNow-card:hover, .Restaurant:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card content styling */
+.card-content {
+    color: #333;
+    padding: 0 10px;
+    box-sizing: border-box;
+    flex: 1; /* Allow card content to grow equally */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Title styling */
+.card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff6347;
+    font-weight: 700;
+}
+
+/* Description styling */
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Button styling */
+.orderNow-btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button hover effect */
+.orderNow-btn:hover {
+    background-color: #ff4500;
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .Cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orderNow-card, .Restaurant {
+        width: 90%;
+        max-width: 380px; /* Limit max width for smaller screens */
+        flex: none; /* Prevent flex-grow on smaller screens for equal sizing */
+    }
+
+    .card-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-content p {
+        font-size: 0.95rem;
+    }
+
+    .orderNow-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

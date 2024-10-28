@@ -1,0 +1,65 @@
+.best-container {
+  padding: 20px; /* Add padding around the entire section */
+  text-align: center; /* Center align the title */
+  background-color: #ffffff;
+}
+
+.best-title {
+  font-size: 2rem; /* Font size for the title */
+  color: #333; /* Title color */
+  margin-bottom: 5px; /* Space below the title */
+}
+
+
+.restaurant-list {
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:60px 0px;
+}
+
+
+.restaurant-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 180px;
+  text-align: center;
+  position: relative;
+}
+
+.restaurant-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.restaurant-name {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 8px 0;
+}
+
+.restaurant-rating {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+.favorite-button {
+  background: transparent;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.favorite-button:hover {
+  color: #c0392b;
+}

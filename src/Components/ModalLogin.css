@@ -1,0 +1,125 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.879);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    z-index: 1001; /* Higher than navbar */
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px; /* Adjust as necessary for your design */
+    width: 90%; /* Responsive width for smaller screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slideIn 0.3s ease; /* Optional animation for opening */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.phone-input {
+    width: calc(100% - 60px); /* Adjust for country code width */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.otp-button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.otp-button:hover {
+    background-color: #e67e22;
+}
+
+.alternative {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.create-account {
+    font-size: 14px;
+}
+
+.create-account a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+/* Optional animation for modal opening */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.modal-content {
+    /* Existing styles */
+    padding: 20px;
+}
+
+.name-input input,
+.email-input input,
+.phone-input input {
+    width: calc(100% - 20px); /* Full width minus some padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space below terms */
+}
+
+.otp-button {
+    width: 100%;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.otp-button:hover {
+    background-color: #e67e22;
+}
